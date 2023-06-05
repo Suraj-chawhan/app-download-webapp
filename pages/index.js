@@ -32,7 +32,7 @@ const app=apps.slice(0,10)
     <div>
     <div className={styles.container}>
   
-    <Slidebar getbanner={getbanner} />
+    <Slidebar getbanner={getbanner}/>
      <div>
     <h3>Recent Post</h3>
     <div className={styles.main}>
