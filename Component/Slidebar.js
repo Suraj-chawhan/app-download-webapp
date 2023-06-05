@@ -2,7 +2,7 @@ import styles from '../styles/home.module.css'
 import React from 'react'
 import {useEffect} from 'react'
 import {useRouter} from 'next/router'
-
+import Image from 'next/image'
 export default function Slidebar({getbanner}){
   
   const [count,setCount]=React.useState(0)
@@ -62,7 +62,7 @@ function next(){
   
   return(
        <div className={styles.mainbest}>
-  <img src={getbanner[count].banner} className={styles.bigimg}/>
+  <Image src={`/${getbanner[count].banner}`}  width={477} height={230} className={styles.bigimg}></Image>
    <button onClick={prev} className={styles.prev}>&#10094;</button>
    <button onClick={next} className={styles.next}>&#10095;</button>
    <div className={styles.slideapp}>

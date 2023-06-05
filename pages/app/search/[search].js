@@ -10,6 +10,7 @@ export default function search({app}){
  return(
    <div>
   {
+ 
    app.length<1?<h1>Data not exist</h1>:app.map(val=><Verticalapps app={val} call={(id)=>handleClick(id)}/>)
    }
    </div>

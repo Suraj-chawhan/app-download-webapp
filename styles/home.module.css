@@ -67,9 +67,7 @@
 
 .bigimg{
   
-  
-  width:477px;
-  height:230px;
+ border-radius:2px;
   margin:10px 0px 5px -8px;
  
 }
@@ -391,6 +389,21 @@ font-size:20px;
     display:none;
     overflow:hidden;
   }
+  
+  .abtn{
+    text-decoration:none;
+    height:20px;
+  padding:5px;
+    border:1px solid black;
+    
+  }
+  
+  .abtn:hover{
+    background-color:blue;
+    color:white;
+  }
+  
+  
 @media(min-width:600px) {
   .divfooter{
     width:101.4%;
