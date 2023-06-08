@@ -12,7 +12,7 @@ export default function tags({data,tags}){
  return(
    <div>
    
-   <h1>List of tag {tags}</h1>
+   <h1>List of {tags} apps</h1>
    {gettags}
    </div>
    );

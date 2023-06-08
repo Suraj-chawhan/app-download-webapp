@@ -18,7 +18,7 @@ export default function Footer(){
 <li>Recent apps</li>
 </Link>
 <Link href={"/app/catagory/top"} className={styles.flink}>
-<li>Best apps</li>
+<li>Top apps</li>
 </Link>
 <Link href={"/app/catagory/coding"}  className={styles.flink}>
 <li>Coding apps</li>

@@ -32,6 +32,7 @@ setVal(val=>!val)
   function call(e){
     console.log(e.key)
     const a=searchdata.toLowerCase()
+    
    router.push(`/app/search/${a}`)
   }
   
