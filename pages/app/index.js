@@ -1,17 +1,17 @@
 import Verticalapps from '../../Component/Verticalapps.js'
 import {useRouter} from 'next/router'
-export default function apps({apps}){
+export default function Apps({apps}){
   const router=useRouter()
+  
   function handleClick(id){
-    
   router.push(`/app/${id}`)
   }
   
   
   const map=apps.map(val=>{
     return(
-      <div>
-      <Verticalapps app={val} id={val.id} call={(id)=>handleClick(id)} key={val.id} />
+      <div key={val.id}>
+      <Verticalapps app={val} id={val.id} call={(id)=>handleClick(id)}  />
       <hr/>
       </div>
       );

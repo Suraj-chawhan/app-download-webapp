@@ -23,7 +23,7 @@ const details=apps.find(val=>val.id===Number(getid))
    <Appdetails  appdetails={details}/>
    <h3>Recent</h3>
  <div className={styles.main}>
-{recentdata.map(val=><App app={val} call={(id)=>handleClick(id)}/>)}
+{recentdata.map(val=><App app={val} call={(id)=>handleClick(id)} key={val.id}/>)}
  
  </div>
     </div>

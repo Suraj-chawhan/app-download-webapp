@@ -6,7 +6,7 @@ export default function Appdetails({appdetails}){
   
 
  
-   const download= () => {
+   function download(){
     const downloadUrl = appdetails.files;
     window.open(downloadUrl, '_blank');
   };

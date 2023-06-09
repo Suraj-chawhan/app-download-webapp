@@ -1,6 +1,6 @@
 import {useRouter} from 'next/router'
 import Verticalapps from '../../../Component/Verticalapps.js'
-export default function tags({data,tags}){
+export default function Tags({data,tags}){
   const router=useRouter()
   function handleClick(id){
   router.push(`/app/catagory/id/${id}`)

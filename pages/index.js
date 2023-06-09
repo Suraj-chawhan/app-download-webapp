@@ -46,8 +46,8 @@ const app=apps.slice(0,10)
       <h3>Apps</h3>
     {app.map(val=>{
     return(
-    <div>
-    <Verticalapps app={val} id={val.id} call={(id)=>handleClick(id)}    key={val.id}  />
+    <div key={val.id}>
+    <Verticalapps app={val} id={val.id} call={(id)=>handleClick(id)}      />
     <hr/>
   
     </div>
