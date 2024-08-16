@@ -31,7 +31,7 @@ export async function getServerSideProps(context) {
   const { params } = context;
   
  
-  const response = await fetch(`https://app-download-webapp.vercel.app/api/data/4`);
+  const response = await fetch(`https://app-download-webapp.vercel.app/api/data`);
   const data = await response.json();
 
   return {

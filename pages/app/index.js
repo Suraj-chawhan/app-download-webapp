@@ -29,7 +29,7 @@ export default function Apps({apps}){
    
    
    export async function getServerSideProps(){
-     const response=await fetch("http://localhost:3000/api/data")
+     const response=await fetch("https://app-download-webapp.vercel.app/api/data")
      const data=await response.json()
      
      return{
