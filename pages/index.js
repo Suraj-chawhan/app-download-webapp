@@ -1,5 +1,4 @@
 
-import Link from 'next/link'
 import App from '../Component/App.js'
 import Slidebar from '../Component/Slidebar.js'
 import styles from "../styles/home.module.css"
