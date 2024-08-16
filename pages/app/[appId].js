@@ -39,7 +39,7 @@ const details=apps.find(val=>val.id===Number(getid))
 export async function getServerSideProps(context){
   const {params}=context
 
-  const response=await fetch(`https://app-download-webapp.vercel.app/api/data/${params.appId}`)
+  const response=await fetch(`https://app-download-webapp.vercel.app/api/data`)
   const data=await response.json()
   
   return{
