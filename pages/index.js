@@ -29,7 +29,26 @@ const app=apps.slice(0,10)
   
   return(
     <div>
-    <div className={styles.container}>
+    {app.map((val)=>{
+     return <h1>{val.title}</h1>
+    })}
+    </div>
+  );
+}
+export async function getServerSideProps(){
+  const response=await fetch('https://jsonplaceholder.org/posts')
+    const data=await response.json()
+  return{
+    props:{
+     apps:data,
+    }
+  }
+  
+  
+}
+
+
+/*<div className={styles.container}>
   
     <Slidebar getbanner={getbanner}/>
      <div>
@@ -56,20 +75,4 @@ const app=apps.slice(0,10)
     }
     </div>
         </div>
-     <button onClick={()=>{router.push("/app")}} className={styles.nextbtn}>Next Page{' >>'}</button>
-     
-
-    </div>
-  );
-}
-export async function getServerSideProps(){
-  const response=await fetch('https://app-download-webapp.vercel.app/api/data')
-    const data=await response.json()
-  return{
-    props:{
-     apps:data,
-    }
-  }
-  
-  
-}
+     <button onClick={()=>{router.push("/app")}} className={styles.nextbtn}>Next Page{' >>'}</button>*/
