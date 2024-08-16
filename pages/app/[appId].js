@@ -30,7 +30,7 @@ export default function Appid({ apps, getid }) {
 export async function getServerSideProps(context) {
   const { params } = context;
   
-  // Corrected the API URL with `params.appId`
+ 
   const response = await fetch(`https://app-download-webapp.vercel.app/api/data/${params.appId}`);
   const data = await response.json();
 
