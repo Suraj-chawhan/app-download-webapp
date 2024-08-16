@@ -27,7 +27,7 @@ export default function Search({app}){
 export async function getServerSideProps(context){
   const {params}=context
   
-  const response=await fetch(`http://localhost:3000/api/data/search/${params.search}`)
+  const response=await fetch(`https://app-download-webapp-rtjw-knsfpllbp-surajchawhans-projects.vercel.app/api/data/search/${params.search}`)
   
 const data=await response.json()
 

@@ -22,7 +22,7 @@ export default function Tags({data,tags}){
 export async function getServerSideProps(context){
   const {params}=context
 
-const response=await fetch(`http://localhost:3000/api/data/catagory/${params.tags}`)
+const response=await fetch(`https://app-download-webapp-rtjw-knsfpllbp-surajchawhans-projects.vercel.app/api/data/catagory/${params.tags}`)
 const data=await response.json()
 
 
