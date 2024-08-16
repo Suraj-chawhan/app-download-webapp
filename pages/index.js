@@ -9,7 +9,9 @@ import Verticalapps from '../Component/Verticalapps.js'
 export default function Home({apps}){
 
 const router=useRouter()
+
 function handleClick(id){
+  
  router.push(`/app/${id}`)
 }
 
