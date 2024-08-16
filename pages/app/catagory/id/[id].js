@@ -13,7 +13,7 @@ export default function id({app}){
 export async function getServerSideProps(context){
   const{params}=context
   
-const response=await fetch(`https://app-download-webapp-rtjw-knsfpllbp-surajchawhans-projects.vercel.app/api/data/catagory/app/${params.id}`)
+const response=await fetch(`https://app-download-webapp.vercel.app/api/data/catagory/app/${params.id}`)
 
 const data=await response.json()
 
