@@ -63,7 +63,7 @@ const app=apps.slice(0,10)
   );
 }
 export async function getServerSideProps(){
-  const response=await fetch('http://localhost:3000/api/data')
+  const response=await fetch('https://app-download-webapp-rtjw-knsfpllbp-surajchawhans-projects.vercel.app/api/data')
     const data=await response.json()
   return{
     props:{
