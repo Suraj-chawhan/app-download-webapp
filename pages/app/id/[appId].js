@@ -1,14 +1,14 @@
 import { useRouter } from 'next/router';
-import App from '../../Component/App.js';
+import App from '../../../Component/App.js';
 import React from 'react';
-import Appdetails from '../../Component/Appdetails.js';
+import Appdetails from '../../../Component/Appdetails.js';
 import styles from '../../styles/home.module.css';
 
 export default function Appid({ apps, getid }) {
   const router = useRouter();
 
   function handleClick(id) {
-    router.push(`/app/${id}`);
+    router.push(`/app/id/${id}`);
   }
 
   const details = apps.find(val => val.id === Number(getid));
@@ -31,7 +31,7 @@ export async function getServerSideProps(context) {
   const { params } = context;
   
  
-  const response = await fetch(`https://app-download-webapp.vercel.app/api/data`);
+  const response = await fetch(`https://app-download-webapp.vercel.app/api/data/id/${params.appId}`);
   const data = await response.json();
 
   return {
