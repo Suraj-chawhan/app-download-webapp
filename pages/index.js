@@ -30,7 +30,7 @@ const app=apps.slice(0,10)
   return(
     <div>
     {app.map((val)=>{
-     return <h1>{val.title}</h1>
+     return <h1 key={val.id}>{val.title}</h1>
     })}
     </div>
   );
